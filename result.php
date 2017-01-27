@@ -1,5 +1,5 @@
 <?php
-// ensures utf-8, baby
+// ensures utf-8
 header('Content-Type: text/html; charset=utf-8');
     // configuration
         require("../includes/config.php"); 
