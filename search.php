@@ -1,8 +1,4 @@
 <?php
-
-    // configuration
-    require("../includes/config.php"); 
-    
     
     // if form was submitted
     // POST, REDIRECT, GET

@@ -1,9 +1,6 @@
 <?php
 // ensures utf-8
 header('Content-Type: text/html; charset=utf-8');
-    // configuration
-        require("../includes/config.php"); 
-
     
     $_SESSION = $_GET;
     $_SESSION['result'] = 'yes';
