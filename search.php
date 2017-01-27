@@ -47,7 +47,7 @@
         
             // gets all 'name' entries from from database
             query("SET NAMES 'utf8'");
-            $names = query("SELECT name FROM `rec-table` WHERE 1") ;
+            $names = query("SELECT name FROM `recipe-table` WHERE 1") ;
              
             $inputtcompare = strtolower($_SESSION['search']); 
               
@@ -71,7 +71,7 @@
                         $displaypass[$j] = $names[$i]; 
                     }
 
-                    $recID = query("SELECT `id` FROM `rec-table` WHERE name = ?", $plaintextname ) ;  
+                    $recID = query("SELECT `id` FROM `recipe-table` WHERE name = ?", $plaintextname ) ;  
                     $recID =($recID[0]['id']);
                     
                     $ingrepass[$j] = new recipeObject;

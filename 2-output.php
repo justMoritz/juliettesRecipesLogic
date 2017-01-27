@@ -23,7 +23,7 @@ header('Content-Type: text/html; charset=utf-8');
 
         // search database and select compare the name set to lowercase with the input
         query("SET NAMES 'utf8'");
-        $dupEntry = query("REPLACE `rec-table` (`id`, `name`, `recipeInstructions`, `recipeYield`, `cookTime`, `prepTime`, `description`, `image`, `featured`) VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?)
+        $dupEntry = query("REPLACE `recipe-table` (`id`, `name`, `recipeInstructions`, `recipeYield`, `cookTime`, `prepTime`, `description`, `image`, `featured`) VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?)
               ",
               htmlspecialchars(ampReplace(rtrim($_SESSION['recipeName']))),
               htmlspecialchars($_SESSION['recipeInstructions']),
@@ -124,7 +124,7 @@ header('Content-Type: text/html; charset=utf-8');
 
         // inserts ingredients into Database, yo.
         $ingrInsertString = 
-            "INSERT INTO `ingredients-table` (`ingredients-id`, `ingredients-rec-id`, `ingredients-name`, `ingrediens-amnt`, `ingrediens-unit`, `ingredients-cate`) VALUES".$insertString;
+            "INSERT INTO `ingredients-table` (`ingredients-id`, `ingredients-recipe-id`, `ingredients-name`, `ingrediens-amnt`, `ingrediens-unit`, `ingredients-cate`) VALUES".$insertString;
 
         query($ingrInsertString);
         

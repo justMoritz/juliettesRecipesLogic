@@ -20,18 +20,18 @@ header('Content-Type: text/html; charset=utf-8');
     foreach ($_SESSION['door'] as $ingr){
         // makes a query for each ingredient and returns an array with the ID that contains heach
         query("SET NAMES 'utf8'");
-        $result = query("SELECT `ingr-rec-id` FROM `ingr-table` WHERE LOWER(`ingr-name`) LIKE ?", '%'.$ingr.'%');
+        $result = query("SELECT `ingredient-recipe-id` FROM `ingredient-table` WHERE LOWER(`ingredient-name`) LIKE ?", '%'.$ingr.'%');
         
         // adds a new key into the array with the name of each of the selected ingredients
         // also makes this key an empty array
         $allArray[$counter] = [];
         // into wich each of the results is written
         foreach($result as $indResult){
-            array_push($allArray[$counter], $indResult['ingr-rec-id']);   
+            array_push($allArray[$counter], $indResult['ingredient-recipe-id']);   
             // removes duplicates if a recipe has for example 2x water
             $allArray[$counter] = array_unique($allArray[$counter]);
             // this one just writes each occurence into one looong array ... 
-            array_push($evenMoreAll, $indResult['ingr-rec-id']);
+            array_push($evenMoreAll, $indResult['ingredient-recipe-id']);
         }    
         $counter++;
     }

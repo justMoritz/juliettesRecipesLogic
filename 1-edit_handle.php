@@ -34,7 +34,7 @@ header('Content-Type: text/html; charset=utf-8');
 
         // deletes the old ingredients, so we don't have any duplicates
         query("SET NAMES 'utf8'");
-        query("DELETE FROM `ingredients-table` WHERE `ingredients-rec-id` = ?", $_SESSION['idString']);
+        query("DELETE FROM `ingredients-table` WHERE `ingredients-recipe-id` = ?", $_SESSION['idString']);
 
         if (isset($_FILES['fileToUpload'])) {
                 $myFile = $_FILES['fileToUpload'];
