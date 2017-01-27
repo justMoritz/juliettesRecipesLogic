@@ -15,3 +15,6 @@ The Edit form for an existing recipe will POST to `editor_handle.php`, which doe
 
 `search.php` and `result.php` represent some of the public display logic used.
 
+## Disclaimer:
+
+Some of the code requires additional files not shown here, but the comments should explain that.
