@@ -1,6 +1,10 @@
 <?php
 
-// see output.php for next step
+// this file is pulled up when an editing form in the CMS is posted
+
+// after data is processed in this program...
+
+// ... the next step is output.php
 
 // ensures utf-8
 header('Content-Type: text/html; charset=utf-8');
