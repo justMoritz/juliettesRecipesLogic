@@ -82,7 +82,6 @@
             }  
 
             // here we render the page we need, passing to it an array below of the results we got from our serach:
-            
             ["title" => "Results", "qarr" => "", "ingrepass" => $ingrepass, "displaypass" => $displaypass , "fromSearch" => "true"  ]);
        
         }

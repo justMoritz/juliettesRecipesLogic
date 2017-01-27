@@ -1,15 +1,9 @@
-# PHP Functions
+# Juliettes Recipes Logic
 
 ## ABOUT:
 
-Collection of PHP functions written and used in some of my projects. Credit given where due, most of the code is adapted, and this repo represents a collection.
+Collection of some of the PHP logic used in the complex [Juliettes Recipes](https://www.moritzzimmer.com/juliettesrecipes) project, including some CMS logic.
 
-
-## `startsWith` and `endsWith`
-
-`startsWith` and `endsWith` Functions adapted from
-
-[Gaurav Phapale](http://phapalegaurav.blogspot.com/2013/10/php-startswith-and-endswith-functions.html)
-
+Code has been slightly changed from actual code for comprehension, and does not use real database names for safety.
 
 
